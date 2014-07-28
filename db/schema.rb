@@ -12,13 +12,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20140728212528) do
+ActiveRecord::Schema.define(version: 20140728183306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cohorts", force: true do |t|
-    t.date     "start"
-    t.date     "end"
+    t.date     "start_date"
+    t.date     "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
