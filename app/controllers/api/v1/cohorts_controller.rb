@@ -39,6 +39,6 @@ class API::V1::CohortsController < API::V1::BaseController
   end
 
   def cohort_params
-    params.require(:cohort).permit(:start, :end)
+    params.require(:cohort).permit(:start_date, :end_date)
   end
 end
