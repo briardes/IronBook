@@ -37,7 +37,7 @@ gem 'bourbon'
 gem 'neat'
 gem 'bitters'
 gem 'refills'
-
+gem 'dragonfly', "~>1.0.5"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'guard-rspec', require: false
