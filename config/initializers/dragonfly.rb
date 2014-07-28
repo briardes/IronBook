@@ -6,8 +6,8 @@ Dragonfly.app.configure do
 
   protect_from_dos_attacks true
   secret "23ad85d1cddc13d2dce2ada59037d02a6fac9cc1bdc32a1cea05f5575474f065"
-
-  url_format "/media/:job/:name"
+  url_host 'http://localhost:3000'
+  url_format '/images/:job.:ext'
 
   datastore :file,
     root_path: Rails.root.join('public/system/dragonfly', Rails.env),
